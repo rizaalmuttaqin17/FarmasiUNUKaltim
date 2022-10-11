@@ -44,6 +44,9 @@
         height: 100%;
         padding-top: 50px;
         padding-bottom: 30px;
+        .shape-img2 {
+            display: none;
+        }
         .hero-content {
             text-align: center;
             span {
@@ -153,10 +156,11 @@
         padding-bottom: 50px;
     }
     .fun-facts-area {
-        padding-top: 50px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .single-fun-fact {
+        margin-top: 30px;
         margin-bottom: 30px;
         p {
             padding-bottom: 0;
@@ -720,12 +724,19 @@
         }        
     }
     .blog-title {
+        text-align: center;
         h3 {
             font-size: 26px;
             margin: 10px 0 12px 0;
         }
         .blog-btn {
-            display: none;
+            // display: none;
+            position: relative;
+            .blog-btn-one{
+                padding: 10px 12px;
+                margin-top: 22px;
+                font-size: 13px;
+            }
         }
     }
     .blog-item {
@@ -1598,7 +1609,10 @@
     .saas-home-area {
         height: 100%;
         padding-top: 100px;
-        padding-bottom: 0;
+        padding-bottom: 100px;
+        .shape-img2 {
+            display: none;
+        }
     }
     .marketing-home-area {
         padding-bottom: 135px;
@@ -1772,7 +1786,10 @@
     .saas-home-area {
         height: 100%;
         padding-top: 100px;
-        padding-bottom: 0;
+        padding-bottom: 100px;
+        .shape-img2 {
+            display: none;
+        }
         .hero-content {
             text-align: center;
             h1 {
@@ -1804,6 +1821,8 @@
         bottom: -5px;
     }
     .circle-img {
+        left: -65%;
+        top: 55%;
         display: none;
     }
     .saas-image {
@@ -1811,7 +1830,7 @@
             position: unset;
 
             &:last-child {
-                left: 265px;
+                // left: 265px;
             }
             &.banner-tab {
                 position: absolute;
@@ -1875,10 +1894,11 @@
         padding-bottom: 50px;
     }
     .fun-facts-area {
-        padding-top: 50px;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
     .single-fun-fact {
+        margin-top: 30px;
         margin-bottom: 30px;
         p {
             padding-bottom: 0;
@@ -2405,12 +2425,18 @@
         }        
     }
     .blog-title {
+        text-align: center;
         h3 {
             font-size: 26px;
             margin: 10px 0 12px 0;
+            max-width: 100%;
         }
         .blog-btn {
-            display: none;
+            // display: none;
+            font-size: 15px;
+            margin-top: 22px;
+            position: relative;
+            padding: 12px 14px;
         }
     }
     .blog-item {
@@ -3048,10 +3074,10 @@
     }
     .saas-image {
         img {
-            left: -42px;
-            width: 330px;
+            // left: -42px;
+            width: 100%;
             &:last-child {
-                left: 202px;
+                // left: 202px;
             }
         }
     }
@@ -3429,12 +3455,14 @@
             width: unset;
         }
         .circle-img {
+            left: 10%;
+            top: 55%;
             width: unset;
         }
         .saas-image {
             img {
                 &:last-child {
-                    left: 300px;
+                    // left: 300px;
                     top: -95px;
                 }
             }

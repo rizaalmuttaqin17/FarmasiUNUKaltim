@@ -46,6 +46,9 @@
     padding-top: 50px;
     padding-bottom: 30px;
   }
+  .saas-home-area .shape-img2 {
+    display: none;
+  }
   .saas-home-area .hero-content {
     text-align: center;
   }
@@ -150,10 +153,11 @@
     padding-bottom: 50px;
   }
   .fun-facts-area {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .single-fun-fact {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   .single-fun-fact p {
@@ -648,12 +652,20 @@
     padding: 12px 20px;
     font-size: 14px;
   }
+  .blog-title {
+    text-align: center;
+  }
   .blog-title h3 {
     font-size: 26px;
     margin: 10px 0 12px 0;
   }
   .blog-title .blog-btn {
-    display: none;
+    position: relative;
+  }
+  .blog-title .blog-btn .blog-btn-one {
+    padding: 10px 12px;
+    margin-top: 22px;
+    font-size: 13px;
   }
   .blog-item .single-blog-item .blog-content h3::before {
     top: 40px;
@@ -1391,7 +1403,10 @@
   .saas-home-area {
     height: 100%;
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
+  }
+  .saas-home-area .shape-img2 {
+    display: none;
   }
   .marketing-home-area {
     padding-bottom: 135px;
@@ -1543,7 +1558,10 @@
   .saas-home-area {
     height: 100%;
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
+  }
+  .saas-home-area .shape-img2 {
+    display: none;
   }
   .saas-home-area .hero-content {
     text-align: center;
@@ -1574,13 +1592,12 @@
     bottom: -5px;
   }
   .circle-img {
+    left: -65%;
+    top: 55%;
     display: none;
   }
   .saas-image img {
     position: unset;
-  }
-  .saas-image img:last-child {
-    left: 265px;
   }
   .saas-image img.banner-tab {
     position: absolute;
@@ -1640,10 +1657,11 @@
     padding-bottom: 50px;
   }
   .fun-facts-area {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
   .single-fun-fact {
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   .single-fun-fact p {
@@ -2102,12 +2120,19 @@
     padding: 12px 20px;
     font-size: 14px;
   }
+  .blog-title {
+    text-align: center;
+  }
   .blog-title h3 {
     font-size: 26px;
     margin: 10px 0 12px 0;
+    max-width: 100%;
   }
   .blog-title .blog-btn {
-    display: none;
+    font-size: 15px;
+    margin-top: 22px;
+    position: relative;
+    padding: 12px 14px;
   }
   .blog-item .single-blog-item .blog-content h3::before {
     top: 40px;
@@ -2658,11 +2683,7 @@
     font-size: 40px;
   }
   .saas-image img {
-    left: -42px;
-    width: 330px;
-  }
-  .saas-image img:last-child {
-    left: 202px;
+    width: 100%;
   }
   .features-image .features-shape {
     bottom: -40px;
@@ -2942,10 +2963,11 @@
     width: unset;
   }
   .saas-home-area .circle-img {
+    left: 10%;
+    top: 55%;
     width: unset;
   }
   .saas-home-area .saas-image img:last-child {
-    left: 300px;
     top: -95px;
   }
   .freelancer-client-section .clients-wraps .client-all-img-1 {
