@@ -58,11 +58,11 @@ Default CSS
 $body-font-family: 'Poppins';
 $heading-font-family: 'Poppins';
 
-$main-color: #2677D8;
-$optional-color: #E9F1FB;
+$main-color: #38E1A5;
+$optional-color: #E2FFF5;
 $white-color: #ffffff;
 $black-color: #152C5B;
-$paragraph-color: #737b9a;
+$paragraph-color: #a3a3a3;
 
 $font-size: 15px;
 $transition: 0.5s; 
@@ -299,9 +299,12 @@ Navbar Area CSS
                         left: 15px;
                         right: 15px;
                     }
-                    &:hover, &:focus, &.active {
-                        font-weight: 700;
+                    &:hover{
                         color: $black-color;
+                    }
+                    &:focus, &.active {
+                        color: $main-color;
+                        font-weight: 600;
                     }
                     i {
                         font-size: 16px;
@@ -1362,10 +1365,10 @@ Saas Home Area CSS
     .hero-content {
         margin-top: 70px;
         h1 {    
-            font-size: 60px;
+            font-size: 58px;
             color: $black-color;
             font-weight: bold;
-            margin: 5px 0 30px 0;
+            margin: 15px 0 30px 0;
         }
         p {
             color: #7d8087;
@@ -1388,7 +1391,8 @@ Saas Home Area CSS
                 display: inline-block;
                 color: $white-color;
                 background-color: $main-color;
-                padding: 14px 25px;
+                border: 1px solid $main-color;
+                padding: 15px 25px;
                 font-size: 16px;
                 font-weight: 400;
                 transition: $transition;
@@ -1400,8 +1404,9 @@ Saas Home Area CSS
                     font-size: 14px;
                 }
                 &:hover {
-                    background-color: $black-color;
-                    color: $white-color !important;
+                    background-color: $white-color;
+                    color: $main-color !important;
+                    border: 1px solid $main-color;
                 }
             }
             .saas-btn-two {
@@ -1444,14 +1449,14 @@ Saas Home Area CSS
 }
 .circle-img {
     position: absolute;
-    left: 55%;
+    left: -50%;
     top: 60%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: -1;
     right: 0;
     margin: 0 auto;
-    width: 35%;
+    width: 30%;
     img {
         animation-name: rotateMe;
         animation-duration: 35s;
@@ -1469,7 +1474,7 @@ Saas Home Area CSS
 .shape-img2 {
     position: absolute;
     left: 0;
-    right: 10%;
+    right: 5%;
     text-align: center;
     margin: 0 auto;
     top: 20%;
@@ -1751,6 +1756,9 @@ Features Section CSS
 }
 .features-image {
     position: relative;
+    img{
+        border-radius: 30px;
+    }
     .features-shape {
         position: absolute;
         bottom: 0;
@@ -1915,11 +1923,12 @@ Counter Section CSS
     transition: $transition;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-left: 90px;
     h3 {
         position: relative;
         text-align: left;
         color: $black-color;
-        margin-bottom: 8px;
+        margin-bottom: 0px;
         font: {
             size: 35px;
             weight: 700;
@@ -1936,10 +1945,16 @@ Counter Section CSS
         text-align: left;
         margin: 0 0 0 0;
         font: {
-            weight: 600;
+            size: 16px;
+            weight: 400;
         }
         padding-bottom: 23px;
         position: relative;
+    }
+    img{
+        display: inline-block;
+        position: absolute;
+        left: 0;
     }
     &:hover {
         transform: translateY(-10px);
@@ -2032,43 +2047,23 @@ Software Section CSS
     position: relative;
 
     .container {
-        // max-width: 1140px;
+        max-width: 1140px;
         margin: auto;
     }
 }
 .software-title {
     text-align: center;
     max-width: 620px;
-    margin: 0 auto 0;
-    &::before{
-        content: "";
-        display: inline-block;
-        border-top: 1px solid;
-        border-color: #e5e5e5;
-        vertical-align: middle;
-        width: 70%;
-        margin-left: -100%;
-        margin-bottom: -65px;
-    }
-    &::after{
-        content: "";
-        display: inline-block;
-        border-top: 1px solid;
-        border-color: #e5e5e5;
-        vertical-align: middle;
-        width: 70%;
-        margin-right: -100%;
-        margin-top: -65px;
-    }
+    margin: 0 auto 50px;
     h2 {
         font-size: 40px;
         margin: -9px 0 0 0;
-        position: relative;
     }
 }
 .tab {
     .tabs_item {
         display: none;
+        
         &:first-child {
             display: block;
         }
@@ -2081,38 +2076,57 @@ Software Section CSS
         display: flex;
         flex-wrap: wrap;
         margin: {
-            bottom: 20px;
+            left: -5px;
+            right: -5px;
+            bottom: 50px;
         }
         li {
-            flex: auto;
+            flex: 25%;
             max-width: 24%;
             text-align: center;
-            /* margin-right: 5px;
-            margin-left: 5px; */
+            margin-right: 5px;
+            margin-left: 5px;
             a {
                 display: block;
-                border-radius: 2px;
                 color: #292a2c;
+                box-shadow: 0px 10px 40px 0px rgba(107, 125, 179, 0.11);
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
                 padding: {
-                    top: 18px;
+                    right: 18px;
+                    top: 15px;
                     bottom: 18px;
-                }
-                margin: {
-                    left: 15px;
-                    right: 15px;
+                    left: 18px;
                 }
                 font: {
-                    size: 14px;
-                    weight: 400;
+                    size: 16px;
+                    weight: 700;
+                }
+                i {
+                    transition: 0.5s;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: normal;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    background: $optional-color;
+                    border-radius: 50px;
+                    color: #424657;
+                    margin-right: 8px;
                 }
             }
             &.current, &:hover {
                 a {
-                    font-weight: 700;
                     background-color: $white-color;
                     color: $main-color;
-                    // box-shadow: 0px 10px 40px 0px rgba(222, 222, 222, 0.52);
-                    border-bottom: 2px solid #2677D8;
+                    border-bottom: 3px solid $main-color;
+                    box-shadow: 0px 10px 40px 0px rgba(222, 222, 222, 0.52);
+
                     i {
                         color: $white-color;
                         background-color: $main-color;
@@ -2123,127 +2137,19 @@ Software Section CSS
     }
     .tab_content {
         .tabs_item {
-            .blog-left{
-                background-color: #ffffff;
-                box-shadow: 0px 10px 40px 0px rgba(222, 222, 222, 0.52);
-                border-radius : 15px;
-                padding: 25px;
-                .blog-img{
-                    margin-bottom: 20px;
-                }
-                .blog-content{
-                    font-size: 14px;
-                }
-                span{
-                    font-size: 10px;
-                    color: #ffffff;
-                    background : $main-color;
-                    padding: 5px 15px;
-                    align-items: center;
-                    border-radius: 8px;
-                }
-                h3{
-                    margin-top:15px;
-                    font-size: 18px;
-                    font-wight: 600;
-                    margin-bottom: 15px;
-                }
-                p{
-                    font-size: 14px;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                }
-                .blog-list {
-                    padding-left: 0;
-                    margin-bottom: 0;
-                    transition: $transition;
-                    margin-top: 15px;
-                    background-color: #f7f7f7;
-                    padding: 10px 15px;
-                    li {
-                        list-style-type: none;
-                        display: inline-block;
-                        font-size: 11px;
-                        font-weight: 400;
-                        margin-right: 20px;
-                        color: #6b6f76;
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                        i {
-                            &::before {
-                                font-size: 14px;
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                    a {
-                        color: #93908f;
-                        text-decoration: none;
-                    }
-                    i {
-                        &::before {
-                            font-size: 14px;
-                            color: #93908f;
-                            margin-right: 5px;
-                        }
-                    }
-                }
-            }
-            .blog-right{
-                background-color: #ffffff;
-                box-shadow: 0px 10px 40px 0px rgba(222, 222, 222, 0.52);
-                border-radius : 15px;
-                padding: 25px;
-                span{
-                    font-size: 10px;
-                    color: #ffffff;
-                    background : $main-color;
-                    padding: 5px 15px;
-                    align-items: center;
-                    border-radius: 8px;
-                }
-                h3{
-                    margin-top:15px;
-                    font-size: 16px;
-                    font-wight: 600;
-                    margin-bottom: 15px;
-                }
-                p{
-                    font-size: 12px;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                }
-                .blog-list {
-                    padding-left: 0;
-                    margin-bottom: 0;
-                    transition: $transition;
-                    margin-top: 10px;
-                    li {
-                        list-style-type: none;
-                        display: inline-block;
-                        font-size: 10px;
-                        font-weight: 400;
-                        margin-right: 20px;
-                        color: #6b6f76;
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
-                    a {
-                        color: #93908f;
-                        text-decoration: none;
-                    }
-                }
-            }
             .tab-image {
                 position: relative;
-                text-align: center;
-                
+                text-align: left;
+                h3{
+                    color: $black-color;
+                    font-size: 40px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    color: $paragraph-color;
+                    font-size: 16px;
+                    padding-bottom: 50px;
+                }                
                 .tab-shape {
                     position: absolute;
                     bottom: 0;
@@ -3950,7 +3856,7 @@ Startup Home Area CSS
             -webkit-animation: movebounce 5s linear infinite;
             animation: movebounce 5s linear infinite;
             width: 850px;   
-            z-index: -1;     
+            z-index: -1;
         }
     }
 }
@@ -3961,16 +3867,26 @@ Partnar Two Area CSS
     position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #002c8c;
+    background-color: $optional-color;
 
     .appreciate {
         max-width: 315px;
         margin-left: auto;
-
         h3 {
-            color: $white-color;
-            font-size: 18px;
+            color: $black-color;
+            font-size: 32px;
             line-height: 1.4;
+        }
+    }
+    .partner-slider{
+        .partner-item{
+            text-align: center;
+            img{
+                height: 50px;
+                width: auto;
+                display: inline-block;
+                margin: auto;
+            }
         }
     }
 }
@@ -4531,7 +4447,7 @@ Blog Section CSS
 .blog-section {
     position: relative;
     &.startup-blog {
-        background-color: #fbfcff;
+        // background-color: #E2FFF5;
     }
 }
 .blog-title {
@@ -4540,20 +4456,20 @@ Blog Section CSS
     margin-top: -5px;
     span {
         font-size: 16px;
-        color: #002c8c;
+        color: $black-color;
         font-weight: 400;
         text-transform: capitalize;
     }
     h3 {
         font-size: 38px;
-        color: #624272;
+        color: $black-color;
         margin: 10px 0 16px 0;
         max-width: 510px;
     }
     p {
         font-weight: 400;
         margin: 0 0 0 0;
-        color: #6b6f76; 
+        color: #a3a3a3; 
         max-width: 750px;
     }
     .blog-btn {
@@ -4563,16 +4479,20 @@ Blog Section CSS
         .blog-btn-one {
             display: inline-block;
             color: $white-color;
-            background-color: #002c8c;
+            background-color: $main-color;
             padding: 12px 25px;
             font-size: 16px;
             font-weight: 400;
             transition: $transition;
-            border-radius: 3px;
-            border: 1px solid #002c8c;
+            border-radius: 10px;
+            border: 1px solid $main-color;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
             &:hover {
                 background-color: $white-color;
-                color: #002c8c;
+                color: $main-color;
             }
         }
     }

@@ -4,7 +4,7 @@
         <i class="fa fa-eye"></i>
     </a>
     <a href="{{ route('fakultas.edit', $id) }}" class='btn btn-info btn-xs'>
-        <i class="fa fa-pencil-alt"></i>
+        <i class="fa fa-pencil-alt-alt"></i>
     </a>
     {!! Form::button('<i class="fa fa-trash"></i>', [
         'type' => 'submit',
